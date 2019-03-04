@@ -1,4 +1,4 @@
-package edu.training.scala.functional_programming
+package edu.training.scala.fp
 
 object ByNameParameters extends App {
   var assertionsEnabled = true

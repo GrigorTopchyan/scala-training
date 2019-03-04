@@ -1,4 +1,4 @@
-package edu.training.scala.functional_programming
+package edu.training.scala.fp
 
 import scala.annotation.tailrec
 

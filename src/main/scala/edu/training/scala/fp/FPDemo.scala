@@ -1,4 +1,4 @@
-package edu.training.scala.functional_programming
+package edu.training.scala.fp
 
 object FPDemo extends App {
   def factorial(n: Int): Int = (1 to n).product
