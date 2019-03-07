@@ -19,12 +19,16 @@ object SetExample extends App {
 //  println(Seq(("apple",2),("pear",3),("apple",5))
 //    .groupBy{case (x,y) => x}
 //    .map(e => e._1 -> e._2.map(t => t._2).sum ))
+//
+//  val res  = Iterator.iterate((123456,0)){case (x,y) => (x/10, x%10)}
+//    .takeWhile{case (x,y) => x != 0 || y != 0}
+//    .map(_._2)
+//    .toList
+//
+//  println(res)
 
-  val res  = Iterator.iterate((123456,0)){case (x,y) => (x/10, x%10)}
-    .takeWhile{case (x,y) => x != 0 || y != 0}
-    .map(_._2)
-    .toList
-   // .reverse
+  def f1[A]: ((A,Unit)) => A = {case (c,b) => c}
+  def f2[A]: A => (A,Unit) = a => (a,())
 
-  println(res)
+  println(f1(f2(5)))
 }
